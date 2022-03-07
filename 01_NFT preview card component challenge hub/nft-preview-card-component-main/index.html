@@ -53,11 +53,17 @@
         width: 70%;
         height: 70%;
         border-radius: 1em;
-        margin: 2em 0 1em 0;
+        margin: 2em 0 1em 2em;
       }
 
       h2 {
         align-self: flex-start;
+        margin-left: 1em;
+      }
+
+      .attribution > a:hover,
+      h2 > a:hover {
+        color: hsl(178, 100%, 50%);
       }
 
       a {
@@ -65,11 +71,44 @@
         text-decoration: none;
       }
 
+      p {
+        margin-left: 1em;
+      }
+
+      .attribution,
+      .text > p {
+        margin-right: 1em;
+      }
+
       .text {
         width: 100%;
         display: inline-flex;
         flex-direction: row;
         justify-content: space-between;
+      }
+
+      .attribution {
+        align-self: flex-end;
+      }
+
+      .authorImg {
+        display: flex;
+        align-items: baseline;
+      }
+
+      .authorImg > img {
+        height: 24px;
+        width: 24px;
+        box-shadow: 0 0 10px hsl(0, 0%, 100%);
+        border: 2px #000 solid;
+        margin-right: 15px;
+      }
+
+      .line {
+        width: 90%;
+        height: 1px;
+        border-top: solid #acc0db 1px;
+        align-self: center;
       }
     </style>
   </head>
@@ -102,7 +141,12 @@
         </p>
       </div>
 
-      Creation of Jules Wyvern
+      <div class="line"></div>
+
+      <div class="authorImg">
+        <img src="./images/image-avatar.png" alt="" />
+        <p>Creation of Jules Wyvern</p>
+      </div>
 
       <div class="attribution">
         Challenge by
